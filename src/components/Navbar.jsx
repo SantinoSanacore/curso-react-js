@@ -1,17 +1,25 @@
 import React from 'react'
+import icono from '../img/icono-ecommerce.png'
 import CartWidget from './CartWidget'
-import ItemListConteiner from './ItemListConteiner'
-import Categorias from './Categorias'
 
 const NavBar = () => {
-return (
-    <nav>
-            <h1>SS Camisetas</h1>
-            <Categorias></Categorias>
-            <CartWidget></CartWidget>
-            <ItemListConteiner></ItemListConteiner>
-    </nav>
-)
+    return (
+        <>
+            <nav>
+                <div className='contenedor-icono'>
+                    <img src={icono} alt="" />
+                </div>
+                <div className='contenedor-categorias'>
+                    <ul>
+                        <li><a href="" target='_blank'>AFA</a></li>
+                        <li><a href="" target='_blank'>Fútbol Argentino</a></li>
+                        <li><a href="" target='_blank'>Fútbol Europeo</a></li>
+                    </ul>
+                </div>
+                <CartWidget></CartWidget>
+            </nav>
+        </>
+    )
 }
 
 export default NavBar

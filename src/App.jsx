@@ -1,10 +1,12 @@
-import NavBar from "./components/NavBar"
+import React from 'react'
+import NavBar from './components/NavBar'
+import ItemListContainer from './components/ItemListContainer'
 
-function App() {
+const App = () => {
   return (
     <>
-      <NavBar>
-      </NavBar>
+      <NavBar></NavBar>
+      <ItemListContainer greeting="Camisetas de futbol originales"></ItemListContainer>
     </>
   )
 }
