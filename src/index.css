@@ -1,0 +1,38 @@
+nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: darkred;
+    color: white;
+}
+
+.carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-apretar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border: solid 1px;
+    background-color: rgb(74, 74, 234);
+    height: 3rem;
+    width: 20rem;
+}
+
+button:hover{
+    background-color: rgb(134, 134, 211);
+}

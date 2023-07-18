@@ -1,17 +1,17 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 
-export class Categorias extends PureComponent {
-render() {
-    return (
-        <>
-        <ul>
-            <li><a href="">AFA</a></li>
-            <li><a href="">Futbol Argentino</a></li>
-            <li><a href="">Futbol Europeo</a></li>
-        </ul>
-        </>
-    )
-}
+const Categorias = () => {
+return (
+    <>
+        <div className='categorias'>
+            <ul>
+                <li>AFA</li>
+                <li>Futbol Argentino</li>
+                <li>Futbol Europeo</li>
+            </ul>
+        </div>
+    </>
+)
 }
 
 export default Categorias

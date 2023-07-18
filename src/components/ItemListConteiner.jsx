@@ -1,15 +1,16 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 
-export class ItemListConteiner extends PureComponent {
-render() {
+const ItemListConteiner = () => {
+
     const greeting = 23;
-
-    return (
-        <>
+    
+return (
+    <>
+    <div className='btn-apretar'>
         <button onClick={()=> console.log(greeting)}>Apreta</button>
-        </>
-    )
-}
+    </div>
+    </>
+)
 }
 
 export default ItemListConteiner

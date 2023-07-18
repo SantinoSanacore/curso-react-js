@@ -3,7 +3,7 @@ import CartWidget from './CartWidget'
 import ItemListConteiner from './ItemListConteiner'
 import Categorias from './Categorias'
 
-function NavBar() {
+const NavBar = () => {
 return (
     <nav>
             <h1>SS Camisetas</h1>
