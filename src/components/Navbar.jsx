@@ -1,25 +1,33 @@
 import React from 'react'
-import icono from '../img/icono-ecommerce.png'
+import { Menu , MenuButton , MenuList , MenuItem, Button, Flex, Spacer } from '@chakra-ui/react'
+import { ChevronDownIcon } from '@chakra-ui/icons'
 import CartWidget from './CartWidget'
+import icono from '../img/icono-ecommerce.png'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
-    return (
-        <>
-            <nav>
-                <div className='contenedor-icono'>
-                    <img src={icono} alt="" />
-                </div>
-                <div className='contenedor-categorias'>
-                    <ul>
-                        <li><a href="" target='_blank'>AFA</a></li>
-                        <li><a href="" target='_blank'>Fútbol Argentino</a></li>
-                        <li><a href="" target='_blank'>Fútbol Europeo</a></li>
-                    </ul>
-                </div>
-                <CartWidget></CartWidget>
-            </nav>
-        </>
-    )
+return (
+    <>
+    <Flex className='nav'>
+        <Link to={"/"}><img className="img-icono" src={icono} alt="" /></Link>
+        <Spacer></Spacer>
+        <Link to={"/"}><Button color='black' backgroundColor='white' variant='solid'>Inicio</Button></Link>
+        <Spacer></Spacer>
+        <Menu>
+            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>Productos</MenuButton>
+            <MenuList>
+                <Link to={`/category/${'afa'}`}><MenuItem>AFA</MenuItem></Link>
+                <Link to={`/category/${'futbol argentino'}`}><MenuItem>Fútbol Argentino</MenuItem></Link>
+                <Link to={`/category/${'futbol europeo'}`}><MenuItem>Fútbol Europeo</MenuItem></Link>
+            </MenuList>
+        </Menu>
+        <Spacer></Spacer>
+        <Link to={"/contact"}><Button color='black' backgroundColor='white' variant='solid'>Contacto</Button></Link>
+        <Spacer></Spacer>
+        <Link to={"/cart"}><CartWidget/></Link>
+    </Flex>
+    </>
+)
 }
 
 export default NavBar

@@ -1,13 +1,14 @@
 import React from 'react'
 import carrito from '../img/icono-carrito.png'
+import { Flex } from '@chakra-ui/react'
 
 const CartWidget = () => {
     return (
         <>
-            <div className='contenedor-carrito'>
-                <img src={carrito} alt="" />
+            <Flex>
+                <img className="img-carrito" src={carrito} alt="" />
                 <p>0</p>
-            </div>
+            </Flex>
         </>
     )
 }
