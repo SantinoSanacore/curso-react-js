@@ -5,4 +5,4 @@ Pagina de camisetas de futbol, donde se puede agregar o eliminar productos a un 
 Se uso Firebase como base de datos, React JS como biblioteca para desarrollar la aplicacion y Chakra UI para los estilos aunque tambien se le aplico un poco de CSS5.
 
 ### GIF Proyecto Final
-[GIF](https://www.loom.com/share/0cd865edef9948898b1adec762494347?sid=4e012136-f34f-4f2a-b03a-fbfa3dc63f0d)
+https://www.loom.com/share/0cd865edef9948898b1adec762494347?sid=847ac8c0-9935-488e-8917-78396488f9b7
