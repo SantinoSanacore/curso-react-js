@@ -10,9 +10,6 @@ const Item = ({ name, desc,  id }) => {
                 <CardHeader>
                     <Heading align='center' size='md'>{name}</Heading>
                 </CardHeader>
-                <Text textAlign='center'>
-                    {desc}
-                </Text>
                 <CardFooter flexDirection='column'>
                     <Link to={`/item/${id}`}>
                         <Button colorScheme='blue' margin='2rem'>Detalles</Button>

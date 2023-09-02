@@ -37,3 +37,13 @@ h2{
     font-size: 2.5rem;
     margin: 1rem;
 }
+
+.carrito-vacio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carrito-vacio p{
+    margin: 2rem;
+}
